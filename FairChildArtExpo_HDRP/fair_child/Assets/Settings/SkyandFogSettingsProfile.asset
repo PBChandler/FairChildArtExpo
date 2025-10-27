@@ -71,16 +71,16 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 55261.973
   aerosolDensity:
-    m_OverrideState: 0
-    m_Value: 0.01192826
+    m_OverrideState: 1
+    m_Value: 0.177
   aerosolTint:
-    m_OverrideState: 0
-    m_Value: {r: 0.9, g: 0.9, b: 0.9, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
   aerosolMaximumAltitude:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 8289.296
   aerosolAnisotropy:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   ozoneDensityDimmer:
     m_OverrideState: 0
@@ -322,13 +322,13 @@ MonoBehaviour:
     m_Value: 0
   compensation:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: -32
   limitMin:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 0.87804884
   limitMax:
     m_OverrideState: 1
-    m_Value: 14
+    m_Value: 5.5609756
   curveMap:
     m_OverrideState: 0
     m_Value:

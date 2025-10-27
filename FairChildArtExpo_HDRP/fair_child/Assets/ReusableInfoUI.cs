@@ -2,9 +2,10 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 public class ReusableInfoUI : MonoBehaviour
 {
-    public GameObject Camera;
+    public GameObject Camera, Billboard;
 
     public Image leftImage, rightImage, InfoBox;
     public Sprite leftPanelImage;
@@ -29,6 +30,7 @@ public class ReusableInfoUI : MonoBehaviour
             LaunchMainPanel("Hello", "Welcome to the Clark + Fairchild art museum.");
             reset = false;
         }
+        
     }
     public void LaunchLeftPanel(Sprite spr)
     {
@@ -54,13 +56,18 @@ public class ReusableInfoUI : MonoBehaviour
 
     public IEnumerator FlyIntoView(GameObject g, Vector3 view)
     {
-        g.transform.position = new Vector3(view.x, view.y-25, view.z);
-        while(g.transform.position.y < view.y)
-        {
-            g.transform.position += new Vector3(0,speed * Time.deltaTime,0);
-            yield return new WaitForEndOfFrame();
-        }
-        
+        // Billboard.transform.position = new Vector3(view.x, view.y-25, view.z);
+
+        //// InfoBox.transform.LookAt(Camera.transform.position + Camera.transform.forward);
+        // while (g.transform.position.y < view.y)
+        // {
+        //     Billboard.transform.LookAt(Camera.transform.position * ZBacking);
+        //     Billboard.transform.position += new Vector3(0,speed * Time.deltaTime,0);
+        //     yield return new WaitForEndOfFrame();
+        // }
+        // Billboard.transform.LookAt(Camera.transform.position * ZBacking);
+        yield return new WaitForEndOfFrame();
+
     }
 
 }

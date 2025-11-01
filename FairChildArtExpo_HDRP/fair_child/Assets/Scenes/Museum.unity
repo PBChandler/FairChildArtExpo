@@ -1058,46 +1058,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   file: N20Limited
   musicNotes:
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
+  - gobject: {fileID: 8403581759965025135}
+    tuning: C3
+  - gobject: {fileID: 2321106539786655050}
+    tuning: D3
+  - gobject: {fileID: 8793251138358957386}
+    tuning: E3
+  - gobject: {fileID: 651748847816578598}
+    tuning: F3
+  - gobject: {fileID: 2622420747693045827}
+    tuning: G3
+  - gobject: {fileID: 4023353225233504884}
+    tuning: A3
+  - gobject: {fileID: 6402391560420137850}
+    tuning: B3
+  - gobject: {fileID: 3584080737030906784}
+    tuning: C4
+  - gobject: {fileID: 7115528514742148612}
+    tuning: D4
+  - gobject: {fileID: 5364606498283676007}
+    tuning: E4
+  - gobject: {fileID: 4252269286155138920}
+    tuning: F4
+  - gobject: {fileID: 6139853867644738369}
+    tuning: G4
+  - gobject: {fileID: 2738256383904701961}
+    tuning: A4
+  - gobject: {fileID: 4090815578990940221}
+    tuning: B4
+  - gobject: {fileID: 3136125443579523061}
+    tuning: C5
+  - gobject: {fileID: 4400093549853510329}
+    tuning: D5
+  - gobject: {fileID: 5327867508601261905}
+    tuning: E5
+  - gobject: {fileID: 653550148477613603}
+    tuning: F5
+  - gobject: {fileID: 7930139624914412063}
+    tuning: G5
+  - gobject: {fileID: 5549946425264152381}
+    tuning: A5
 --- !u!4 &133112049
 Transform:
   m_ObjectHideFlags: 0
@@ -12852,31 +12852,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   publisher: {fileID: 133112048}
+  eulers: {x: 0, y: 0, z: -109}
   musicNotes:
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
-  - gobject: {fileID: 0}
-    tuning: 
+  - gobject: {fileID: 8403581759965025135}
+    tuning: C3
+  - gobject: {fileID: 2321106539786655050}
+    tuning: D3
+  - gobject: {fileID: 8793251138358957386}
+    tuning: E3
+  - gobject: {fileID: 651748847816578598}
+    tuning: F3
+  - gobject: {fileID: 2622420747693045827}
+    tuning: G3
+  - gobject: {fileID: 4023353225233504884}
+    tuning: A3
+  - gobject: {fileID: 6402391560420137850}
+    tuning: B3
+  - gobject: {fileID: 3584080737030906784}
+    tuning: C4
+  - gobject: {fileID: 7115528514742148612}
+    tuning: D4
+  - gobject: {fileID: 5364606498283676007}
+    tuning: E4
+  - gobject: {fileID: 4252269286155138920}
+    tuning: F4
+  - gobject: {fileID: 6139853867644738369}
+    tuning: G4
+  - gobject: {fileID: 2738256383904701961}
+    tuning: A4
+  - gobject: {fileID: 4090815578990940221}
+    tuning: B4
+  - gobject: {fileID: 3136125443579523061}
+    tuning: C5
+  - gobject: {fileID: 4400093549853510329}
+    tuning: D5
+  - gobject: {fileID: 5327867508601261905}
+    tuning: E5
+  - gobject: {fileID: 653550148477613603}
+    tuning: F5
+  - gobject: {fileID: 7930139624914412063}
+    tuning: G5
+  - gobject: {fileID: 5549946425264152381}
+    tuning: A5
 --- !u!4 &1761620830
 Transform:
   m_ObjectHideFlags: 0

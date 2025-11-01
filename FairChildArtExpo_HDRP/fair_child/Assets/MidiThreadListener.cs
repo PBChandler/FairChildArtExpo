@@ -10,6 +10,7 @@ public class MidiThreadListener : MonoBehaviour
     public static MidiThreadListener Instance;
     Queue<Action> jobs = new Queue<Action>();
 
+    public Vector3 eulers;
     public notePair[] musicNotes;
     void Start()
     {
@@ -28,9 +29,12 @@ public class MidiThreadListener : MonoBehaviour
     }
 
 
-    public void Listener(NoteName n, bool state)
+    public void Listener(string n, bool state)
     {
-        musicNotes.First(p => p.ne == n).gobject.SetActive(state);
+        if(state)
+            musicNotes.First(p => p.tuning == n).gobject.transform.Rotate(eulers);
+        else
+            musicNotes.First(p => p.tuning == n).gobject.transform.Rotate(-eulers);
     }
    
 }

@@ -19,7 +19,7 @@ public class MidiReader : MonoBehaviour
 {
     public MidiFile mid;
     private const string OutputDeviceName = "Microsoft GS Wavetable Synth";
-
+    public string file;
     private OutputDevice _outputDevice;
 
     public MidiClockSettings ClockSettings { get; private set; }
@@ -35,7 +35,7 @@ public class MidiReader : MonoBehaviour
 
     public void Start()
     {
-        mid = MidiFile.Read(Application.streamingAssetsPath + "/audio/TestMIDI.mid");
+        mid = MidiFile.Read(Application.streamingAssetsPath + "/audio/"+file+".mid");
         
         InitializeOutputDevice();
         Play();
@@ -122,64 +122,14 @@ public class MidiReader : MonoBehaviour
     public void goAway(NotesEventArgs e, bool start)
     {
         string read = e.Notes.Select(n => $"{n}").Last();
-
-        NoteName n = NoteName.F;
-        switch (read[0])
-        {
-            case 'C':
-                if (read[1] == '#')
-                    n = NoteName.CSharp;
-                else
-                    n = NoteName.C;
-                break;
-
-            case 'D':
-                if ( read[1] == '#')
-                    n = NoteName.DSharp;
-                else
-                    n = NoteName.D;
-                break;
-
-            case 'E':
-                n = NoteName.E;
-                break;
-
-            case 'F':
-                if ( read[1] == '#')
-                    n = NoteName.FSharp;
-                else
-                    n = NoteName.F;
-                break;
-
-            case 'G':
-                if (read[1] == '#')
-                    n = NoteName.GSharp;
-                else
-                    n = NoteName.G;
-                break;
-
-            case 'A':
-                if (read[1] == '#')
-                    n = NoteName.ASharp;
-                else
-                    n = NoteName.A;
-                break;
-
-            case 'B':
-                n = NoteName.B;
-                break;
-            default:
-                Debug.Log("FAW FAW" + read);
-                break;
-        }
-        Debug.Log("GAW GAW" + n.ToSafeString());
+        
         //
-        Alight(n, start);
+        Alight(read, start);
         //dg_publish.Invoke(n, true);
 
     }
 
-    public async void Alight(NoteName n, bool b)
+    public async void Alight(string n, bool b)
     {
         MidiThreadListener.Instance.AddJob(() =>
         {
@@ -193,6 +143,6 @@ public class MidiReader : MonoBehaviour
 public class notePair
 {
     public GameObject gobject;
-    public NoteName ne;
+    public string tuning;
 }
 

@@ -22,6 +22,8 @@ public class MidiReader : MonoBehaviour
     public string file;
     private OutputDevice _outputDevice;
 
+    public float delay = 0.1f;
+
     public MidiClockSettings ClockSettings { get; private set; }
 
     private Playback _playback;
@@ -38,8 +40,8 @@ public class MidiReader : MonoBehaviour
         mid = MidiFile.Read(Application.streamingAssetsPath + "/audio/"+file+".mid");
         
         InitializeOutputDevice();
-        Play();
-        Go();
+       
+        Invoke("Go", 0.5f);
         
     }
     private void InitializeOutputDevice()
@@ -66,7 +68,7 @@ public class MidiReader : MonoBehaviour
         PlaybackSettings settings = new PlaybackSettings();
         settings.ClockSettings = ClockSettings;
         _playback = mid.GetPlayback(_outputDevice, settings);
-        _playback.Loop = true;
+        _playback.Loop = true; //determine if track is looping
         _playback.NotesPlaybackStarted += OnNotesPlaybackStarted;
         _playback.NotesPlaybackFinished += OnNotesPlaybackFinished;
         
@@ -75,6 +77,7 @@ public class MidiReader : MonoBehaviour
 
     public void Go()
     {
+        Play();
         _playback.Start();
     }
     private void OnApplicationQuit()

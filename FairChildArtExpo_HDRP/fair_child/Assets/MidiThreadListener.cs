@@ -26,6 +26,8 @@ public class MidiThreadListener : MonoBehaviour
         public GameObject gameObject;
         public bool on;
     }
+
+    public int index = 0, secondIndex = 0;
     void Start()
     {
         Instance = this;
@@ -36,6 +38,7 @@ public class MidiThreadListener : MonoBehaviour
             foreach (var t in timeStamps)
             {
                 StartCoroutine(PlayTimeStamp(t));
+                index++;
             }
         }
     }

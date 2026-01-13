@@ -37,7 +37,7 @@ public class MidiReader : MonoBehaviour
 
     public void Start()
     {
-        mid = MidiFile.Read(Application.streamingAssetsPath + "/audio/"+file+".mid");
+        mid = MidiFile.Read(Application.streamingAssetsPath + "/audio/"+file+".midi");
         
         InitializeOutputDevice();
        

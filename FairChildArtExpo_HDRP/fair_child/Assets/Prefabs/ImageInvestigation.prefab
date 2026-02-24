@@ -2513,7 +2513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae4a3b519992bb64e98610748922283c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tickrate: 0.01
+  tickrate: 0.1
   sr: {fileID: 4442322574667967057}
   tex: {fileID: 8400000, guid: 9c7109f2792a94d40a70a33c2e74d258, type: 2}
 --- !u!1 &5387450882842592886
@@ -3134,7 +3134,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.06, z: 8.77}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.16654885, y: 0.16654885, z: 0.16654885}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7842132036549354517}

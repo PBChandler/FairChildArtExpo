@@ -7,6 +7,6 @@ public class PointNClickTag : MonoBehaviour
 
     public void Interact()
     {
-
+        
     }
 }

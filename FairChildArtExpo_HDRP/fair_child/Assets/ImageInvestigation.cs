@@ -17,4 +17,12 @@ public class ImageInvestigation : MonoBehaviour
         dg_onItemFound?.Invoke(newItem);
     }
 
+    public void Update()
+    {
+        //debug
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            AddItem(pointNClickObjects[Random.Range(0, pointNClickObjects.Count)]);
+        }
+    }
 }

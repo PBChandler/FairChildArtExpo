@@ -21,6 +21,16 @@ public class RenderTextureToSprite : MonoBehaviour
         // ReadPixels looks at the active RenderTexture.
         RenderTexture.active = rTex;
         tex.ReadPixels(new Rect(0, 0, rTex.width, rTex.height), 0, 0);
+        
+        tex.Apply();
+        Color[] c = tex.GetPixels();
+        Color[] cmod =c;
+        for(int i = 0; i < cmod.Length; i++)
+        {
+            if (cmod[i].r <= 0.5f)
+                cmod[i].a = 0f;
+        }
+        tex.SetPixels(cmod);
         tex.Apply();
         return tex;
     }
